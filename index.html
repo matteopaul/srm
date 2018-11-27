@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Hello World!</title>
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div id="container">
+      <div id="container--header">
+        <span id="container--header-title">restock monitor</span>
+        <div id="container--header-controls">
+          <div id="header--maximize" class="control"></div>
+
+          <div id="header--minimize" class="control"></div>
+
+          <div id="header--close" class="control"></div>
+        </div>
+      </div>
+      <nav id="container-nav">
+        <button tab="0" type="button" name="tab1" id="nav--tab0" class="nav--button">Restocks</button>
+        <button tab="1" type="button" name="tab1" id="nav--tab1" class="nav--button">Items</button>
+        <button tab="2" type="button" name="tab1" id="nav--tab2" class="nav--button">News</button>
+        <button tab="3" type="button" name="tab1" id="nav--tab3" class="nav--button">Options</button>
+      </nav>
+      <div class="tab">
+        <div id="container--controls">
+          <div id="container--delay-container">
+            <label for="delay">Enter refresh time you wish:</label>
+            <div id="delay--controls"> <input type="number" name="delay" value=""> Seconds </div>
+          </div>
+          <div id="container--submit-container">
+            <button type="button" name="button">start</button>
+            <button type="button" name="button">stop</button>
+          </div>
+        </div>
+        <div id="container--history"></div>
+      </div>
+      <div class="tab">
+        <div id="items--container">
+          <div class="item">
+            <div class="item--img">
+              <img src="http://assets.supremenewyork.com/157772/vi/R-t2RAhGoSU.jpg" alt="">
+            </div>
+            <div class="item--desc">
+              <p class="item--desc-name">Hooded Plaid Work Shirt</p>
+              <p class="item--desc-style">Brown</p>
+            </div>
+            <div class="item--controls">
+              <button type="button" name="button">SNiPE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      require('./assets/js/events.js');
+    </script>
+  </body>
+</html>

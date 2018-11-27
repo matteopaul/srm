@@ -1,0 +1,327 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #19334E;
+}
+
+#container--header {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background: #ffffff;
+  vertical-align: middle;
+  -webkit-app-region: drag;
+}
+#container--header-controls {
+  position: absolute;
+  width: 90px;
+  height: 27px;
+  display: inline-block;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.control {
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 100%;
+  border-radius: 50%;
+  background: #ff0000;
+}
+
+#header--close {
+  background: #C40000;
+}
+
+#header--minimize {
+  background: #1FC400;
+}
+
+#header--maximize {
+  background: #FF9100;
+}
+
+#container--header-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  float: left;
+  margin-left: 17px;
+  color: #19334E;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container--controls {
+  position: relative;
+  width: 100%;
+}
+
+#container--delay-container {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+label {
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+}
+
+#delay--controls {
+  text-align: center;
+}
+
+#delay--controls input {
+  margin-top: 37px;
+  border: 1px solid #15233B;
+  background: #0B2846;
+  color: #ffffff;
+  width: 50px;
+  height: 33px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+#delay--controls input:focus {
+  outline: none;
+}
+
+#container--submit-container {
+  text-align: center;
+  margin-top: 37px;
+}
+
+#container--submit-container button {
+  color: #19334E;
+  border: none;
+  background: none;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-size: 31px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  width: 120px;
+  height: 50px;
+}
+
+#container--history {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: #ffffff;
+  overflow: scroll;
+}
+
+#container-nav {
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  background: #ffffff;
+}
+
+.history--object {
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+
+.history--object a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.object--img {
+  position: relative;
+  width: 80px;
+  height: 100%;
+  left: 0;
+  display: inline-block;
+}
+
+.object--img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.object--text {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 80px);
+  top: 0;
+  color: #19334E;
+  font-weight: bold;
+}
+
+.object--status {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+}
+
+.object--status span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.object--time {
+  display: inline-block;
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  text-align: center;
+}
+
+.object--time span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.object--info {
+    display: inline-block;
+    position: relative;
+    width: calc(100% - 300px);
+    height: 100%;
+    float: right;
+}
+
+.object--info p {
+  margin: 0;
+}
+
+.restock::before {
+  content: 'restock';
+  color: #00AF17;
+  text-transform: uppercase;
+}
+
+.soldout::before {
+  content: 'sold out';
+  color: #FF0606;
+  text-transform: uppercase;
+}
+
+.nav--button {
+  position: relative;
+  width: 100px;
+  height: 100%;
+  margin: 0;
+  background: transparent;
+  border: none;
+  color: #000000;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav--button.active {
+  background: #19334e;
+  color: #ffffff;
+}
+
+.tab {
+  display: none;
+  width: 100%;
+  position: absolute;
+  height: calc(100% - 75px);
+  bottom: 0;
+  left: 0;
+}
+
+.tab.active {
+  display: block;
+}
+
+#items--container {
+  position: absolute;
+  width: calc(100% - 50px);
+  left: 25px;
+  height: calc(100% - 25px);
+  bottom: 0;
+}
+
+.item {
+  width: 120px;
+  height: 220px;
+  margin-right: 37px;
+  margin-bottom: 25px;
+  background: #ffffff;
+  position: absolute;
+}
+
+.item--img {
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+
+.item--img img {
+  position: relative;
+  width: 100%;
+}
+
+.item--controls {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.item--desc {
+  padding: 5px;
+}
+
+.item--controls button {
+  margin: 5px;
+  width: calc(100% - 10px);
+  background: #19334e;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+
+.item--desc p {
+    margin: 0;
+}
+
+.item--desc-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.item--desc-style {
+  font-size: 12px;
+}
